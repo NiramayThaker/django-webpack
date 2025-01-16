@@ -1,6 +1,7 @@
 import "./helper1.js";
 import "./helper2.js";
 import Alpine from 'alpinejs'
+import "../styles/index.css"
 
 window.Alpine = Alpine
 Alpine.start()
