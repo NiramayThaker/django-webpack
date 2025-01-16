@@ -12,5 +12,9 @@
   "devDependencies": {
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "alpinejs": "^3.14.8",
+    "htmx.org": "^1.9.12"
   }
 }

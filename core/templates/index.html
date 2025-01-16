@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,5 +8,15 @@
 </head>
 <body>
     <h1 id="message">Hello World ..!</h1>
+
+    <button hx-get="{% url 'home' %}" hx-trigger="click" hx-swap="outerHTML">
+        Click Me
+    </button>
+
+    <div x-data="{showMe: false, msg: 'Hello from Alpine'}">
+        <p x-text="msg" x-show="showMe"></p>
+        <button @click="showMe = !showMe">Toggle</button>
+    </div>
+
 </body>
 </html>
